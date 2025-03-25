@@ -1,4 +1,3 @@
-"use client";
 import Avatar from "@mui/material/Avatar";
 import { builder, Builder, withChildren } from "@builder.io/react";
 import Button from "@mui/material/Button";
@@ -251,6 +250,11 @@ Builder.registerComponent(withChildren(TextField), {
 Builder.registerComponent(withChildren(Button), {
   name: "Button",
   inputs: [
+    // {
+    //   name: "label",
+    //   type: "string",
+
+    // },
     {
       name: "action",
       type: "object",
@@ -339,7 +343,7 @@ Builder.registerComponent(withChildren(Button), {
     {
       name: "href",
       type: "string",
-      required: true,
+      // required: true,
     },
     {
       name: "LinkComponent",
@@ -467,7 +471,7 @@ Builder.registerComponent(withChildren(Link), {
       meta: {
         ts: "RootComponent",
       },
-      required: true,
+      // required: true,
     },
     {
       name: "gutterBottom",
@@ -590,7 +594,7 @@ Builder.registerComponent(withChildren(Typography), {
       meta: {
         ts: "RootComponent",
       },
-      required: true,
+      // required: true,
     },
     {
       name: "gutterBottom",
@@ -680,7 +684,7 @@ Builder.registerComponent(withChildren(Card), {
       meta: {
         ts: "RootComponent",
       },
-      required: true,
+      // required: true,
     },
     {
       name: "elevation",
@@ -747,7 +751,7 @@ Builder.registerComponent(withChildren(Paper), {
       meta: {
         ts: "RootComponent",
       },
-      required: true,
+      // required: true,
     },
     {
       name: "elevation",
@@ -810,7 +814,7 @@ Builder.registerComponent(withChildren(CardMedia), {
       meta: {
         ts: "RootComponent",
       },
-      required: true,
+      // required: true,
     },
     {
       name: "image",
@@ -868,7 +872,7 @@ Builder.registerComponent(withChildren(CardContent), {
       meta: {
         ts: "RootComponent",
       },
-      required: true,
+      // required: true,
     },
     {
       name: "style",
@@ -922,7 +926,7 @@ Builder.registerComponent(withChildren(Avatar), {
       meta: {
         ts: "RootComponent",
       },
-      required: true,
+      // required: true,
     },
     {
       name: "imgProps",
@@ -1065,7 +1069,7 @@ Builder.registerComponent(withChildren(IconButton), {
     {
       name: "href",
       type: "string",
-      required: true,
+      // required: true,
     },
     {
       name: "LinkComponent",
@@ -1174,7 +1178,7 @@ Builder.registerComponent(withChildren(Icon), {
       meta: {
         ts: "RootComponent",
       },
-      required: true,
+      // required: true,
     },
     {
       name: "fontSize",
@@ -1197,5 +1201,6 @@ Builder.registerComponent(withChildren(Icon), {
         ts: "SxProps<Theme>",
       },
     },
+
   ],
 });

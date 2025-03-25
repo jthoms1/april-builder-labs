@@ -16,9 +16,9 @@ figmaMapping({
   componentKey: "54180cdd9b2573dbd53001c5dff9e2b89cf2786c",
   mapper(figma: FigmaCardMediaProps) {
     // If Instance is provided, use it as an override
-    if (figma.Instance) {
-      return figma.Instance;
-    }
+    // if (figma.Instance) {
+    //   return figma.Instance;
+    // }
 
     // Calculate height based on ratio
     const getHeight = () => {
