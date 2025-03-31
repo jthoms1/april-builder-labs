@@ -14,7 +14,7 @@ import Typography from "@mui/material/Typography";
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
 
 Builder.registerComponent(withChildren(TextField), {
-  name: "Default",
+  name: "TextField",
   inputs: [
     {
       name: "autoComplete",
