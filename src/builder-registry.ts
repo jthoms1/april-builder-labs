@@ -10,6 +10,11 @@ import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionActions from "@mui/material/AccordionActions";
+
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
 
