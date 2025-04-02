@@ -30,6 +30,7 @@ figmaMapping({
         | "rounded"
         | "square",
       sx: figma.Size ? sizeMap[figma.Size] : undefined,
+      component: "div",
     };
 
     // Content-specific props

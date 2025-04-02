@@ -11,6 +11,7 @@ interface FigmaCardProps extends BaseFigmaProps {
 figmaMapping({
   componentKey: "cc01140031c061fd8fd50d9b4f7035e5e61c1142",
   mapper(figma: FigmaCardProps) {
+    console.log('Card figma.$children', figma.$children);
     return (
       <Card
         variant={figma.Blank === "True" ? "outlined" : "elevation"}

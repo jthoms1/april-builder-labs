@@ -50,7 +50,7 @@ figmaMapping({
 
     // Convert square string to boolean
     const isSquare = figma.Square === "True";
-
+    console.log('Paper figma object',figma)
     return (
       <Paper
         variant={figma.Variant?.toLowerCase() as "elevation" | "outlined"}
