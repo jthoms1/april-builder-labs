@@ -255,19 +255,13 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mb-8 rounded-md overflow-hidden border border-gray-200">
+          <div className="mb-8 rounded-md overflow-hidden border border-gray-200 bg-gray-100">
             <Image
               src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F25f7c1c6343546cfbf3d7ecd69a8487a"
               alt="Builder.io Projects interface"
               width={900}
               height={600}
               className="w-full"
-              onError={(e) => {
-                // Fallback to a placeholder if image fails to load
-                const target = e.target as HTMLImageElement;
-                target.onerror = null; // Prevent infinite error loop
-                target.style.backgroundColor = "#f3f4f6"; // Light gray background
-              }}
             />
           </div>
         </main>
