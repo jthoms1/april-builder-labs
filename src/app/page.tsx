@@ -1,22 +1,18 @@
-import Image from "next/image";
-import Link from "next/link";
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-[#171717] font-[family-name:var(--font-geist-sans)]">
       {/* Top Navigation */}
       <header className="flex items-center justify-between px-6 py-3 border-b border-gray-100">
         <div className="flex items-center">
-          <Link href="/" className="flex items-center">
-            <Image
+          <a href="/" className="flex items-center">
+            <img
               src="/builder-logo.svg"
               alt="Builder.io logo"
               width={40}
               height={40}
-              priority
             />
             <span className="ml-2 font-bold">builder.io</span>
-          </Link>
+          </a>
         </div>
         <nav className="hidden md:flex items-center space-x-6">
           <div className="relative group">
@@ -34,9 +30,9 @@ export default function Home() {
               Developers <span className="ml-1">▼</span>
             </button>
           </div>
-          <Link href="/pricing" className="text-sm font-medium">
+          <a href="/pricing" className="text-sm font-medium">
             Pricing
-          </Link>
+          </a>
           <div className="relative group">
             <button className="flex items-center text-sm font-medium">
               Resources <span className="ml-1">▼</span>
@@ -44,18 +40,18 @@ export default function Home() {
           </div>
         </nav>
         <div className="flex items-center space-x-2">
-          <Link
+          <a
             href="/contact"
             className="hidden md:block px-4 py-2 text-sm font-medium border border-gray-200 rounded-md"
           >
             Contact Sales
-          </Link>
-          <Link
+          </a>
+          <a
             href="/app"
             className="px-4 py-2 text-sm font-medium text-white bg-[#6979F8] rounded-md"
           >
             Go to App
-          </Link>
+          </a>
         </div>
       </header>
 
@@ -101,36 +97,36 @@ export default function Home() {
               <h3 className="mb-2 text-sm font-medium">Overview</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link
+                  <a
                     href="#"
                     className="block text-sm text-gray-600 hover:text-gray-900"
                   >
                     Key Concepts in Develop
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="#"
                     className="block text-sm text-gray-600 hover:text-gray-900"
                   >
                     How Builder Works
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="#"
                     className="block text-sm text-gray-600 hover:text-gray-900"
                   >
                     Learning Paths
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="#"
                     className="block text-sm text-gray-600 hover:text-gray-900"
                   >
                     Enterprise Hub
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -139,20 +135,20 @@ export default function Home() {
               <h3 className="mb-2 text-sm font-medium">Get Started</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link
+                  <a
                     href="#"
                     className="block text-sm text-gray-600 hover:text-gray-900"
                   >
                     Get Started with Develop
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="#"
                     className="block text-sm text-gray-600 hover:text-gray-900"
                   >
                     Import from Figma
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -161,36 +157,36 @@ export default function Home() {
               <h3 className="mb-2 text-sm font-medium">Builder Basics</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link
+                  <a
                     href="#"
                     className="block text-sm text-gray-600 hover:text-gray-900"
                   >
                     Visual Copilot
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="#"
                     className="block text-sm text-gray-600 hover:text-gray-900"
                   >
                     Visual Editor
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="#"
                     className="block text-sm text-gray-600 hover:text-gray-900"
                   >
                     Collaboration Tools
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="#"
                     className="block text-sm text-gray-600 hover:text-gray-900"
                   >
                     Productivity Tools
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -205,9 +201,9 @@ export default function Home() {
         <main className="flex-1 px-6 py-8 max-w-4xl">
           <div className="flex items-center mb-6">
             <h1 className="text-3xl font-bold">Projects</h1>
-            <Link href="#" className="ml-2">
+            <a href="#" className="ml-2">
               <span className="text-gray-400">🔗</span>
-            </Link>
+            </a>
           </div>
 
           <div className="mb-6">
@@ -256,7 +252,7 @@ export default function Home() {
           </div>
 
           <div className="mb-8 rounded-md overflow-hidden border border-gray-200 bg-gray-100">
-            <Image
+            <img
               src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F25f7c1c6343546cfbf3d7ecd69a8487a"
               alt="Builder.io Projects interface"
               width={900}
@@ -271,44 +267,44 @@ export default function Home() {
           <h3 className="mb-4 text-sm font-bold text-gray-500">ON THIS PAGE</h3>
           <ul className="space-y-4">
             <li>
-              <Link
+              <a
                 href="#"
                 className="block text-sm text-gray-600 hover:text-gray-900"
               >
                 Create apps from prompts
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="#"
                 className="block text-sm text-gray-600 hover:text-gray-900"
               >
                 Convert Figma design to code
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="#"
                 className="block text-sm text-gray-600 hover:text-gray-900"
               >
                 Connect an existing Github Repository
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="#"
                 className="block text-sm text-gray-600 hover:text-gray-900"
               >
                 Create a Pull Request
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="#"
                 className="block text-sm text-gray-600 hover:text-gray-900"
               >
                 Tag the Builder agent to make updates
-              </Link>
+              </a>
             </li>
           </ul>
         </aside>
