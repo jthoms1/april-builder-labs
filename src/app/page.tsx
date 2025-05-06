@@ -262,6 +262,12 @@ export default function Home() {
               width={900}
               height={600}
               className="w-full"
+              onError={(e) => {
+                // Fallback to a placeholder if image fails to load
+                const target = e.target as HTMLImageElement;
+                target.onerror = null; // Prevent infinite error loop
+                target.style.backgroundColor = "#f3f4f6"; // Light gray background
+              }}
             />
           </div>
         </main>
